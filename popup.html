@@ -8,7 +8,10 @@
 <body>
   <header>
     <h1>Subtitle Styler</h1>
-    <label class="switch"><input type="checkbox" id="enabled"> Enabled</label>
+    <div class="row">
+      <label class="switch"><input type="checkbox" id="enabled"> Enabled</label>
+      <button id="reset" type="button" title="Reset to defaults">Reset</button>
+    </div>
   </header>
 
   <div class="preview"><span id="preview">This is how your subtitles will look.</span></div>
@@ -16,13 +19,16 @@
   <section>
     <h2>Font <button id="refreshFonts" type="button" title="Re-read installed fonts">↻</button></h2>
     <input id="fontSearch" type="search" placeholder="Search installed fonts…" autocomplete="off">
-    <select id="fontFamily" size="7"></select>
+    <select id="fontFamily" size="5"></select>
     <div class="hint" id="fontCount"></div>
   </section>
 
   <section class="grid">
-    <label>Size <output id="fontSizeOut"></output></label>
-    <input id="fontSize" type="range" min="0" max="12" step="0.25">
+    <label>Size</label>
+    <div class="row">
+      <input id="fontSize" type="range" min="0" max="12" step="0.25">
+      <output id="fontSizeOut"></output>
+    </div>
 
     <label>Style</label>
     <div class="row">
@@ -46,7 +52,7 @@
       <option value="depressed">Depressed</option>
     </select>
 
-    <label>Edge color / width</label>
+    <label>Edge color</label>
     <div class="row">
       <input id="edgeColor" type="color">
       <input id="edgeWidth" type="range" min="0" max="8" step="1">
@@ -67,10 +73,6 @@
       <output id="bottomOffsetOut"></output>
     </div>
   </section>
-
-  <footer>
-    <button id="reset" type="button">Reset to defaults</button>
-  </footer>
 
   <script src="shared.js"></script>
   <script src="popup.js"></script>
