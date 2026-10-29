@@ -12,3 +12,6 @@ Desktop.ini
 *.zip
 *.crx
 *.pem
+
+# Screenshots
+*.png
