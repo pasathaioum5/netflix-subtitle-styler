@@ -82,10 +82,6 @@ The extension makes no network requests and collects no data.
 - **Netflix updates:** the extension depends on Netflix's `player-timedtext` class names. If Netflix changes its player markup, update the `CONTAINER` selector in `content.js`.
 - **Bottom-center mode:** this ignores Netflix's own positioning, including when Netflix moves subtitles to the top to avoid on-screen text.
 
-## Contributing
-
-Issues and pull requests are welcome. Please include your Chrome version and, if possible, the Netflix title and subtitle language when you report a styling problem.
-
 ## License
 
 [MIT](LICENSE): free to use, modify and distribute.
